@@ -1,0 +1,873 @@
+2022-01-12 18:55:47,937 [INFO] lithops.config -- Lithops v2.5.8
+2022-01-12 18:55:47,938 [DEBUG] lithops.config -- Config file not found
+2022-01-12 18:55:47,938 [DEBUG] lithops.config -- Loading compute backend module: localhost
+2022-01-12 18:55:47,938 [DEBUG] lithops.config -- Loading Storage backend module: localhost
+2022-01-12 18:55:47,943 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:55:47,943 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:55:47,944 [DEBUG] lithops.localhost.localhost -- Creating Localhost compute client
+2022-01-12 18:55:47,945 [INFO] lithops.localhost.localhost -- Localhost compute client created
+2022-01-12 18:55:47,946 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 - Invoker initialized. Max workers: 1
+2022-01-12 18:55:47,947 [DEBUG] lithops.executors -- Function executor for localhost created with ID: 3ce652-0
+2022-01-12 18:55:47,948 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A000 - Selected Runtime: python 
+2022-01-12 18:55:47,948 [DEBUG] lithops.storage.storage -- Runtime metadata found in local disk cache
+2022-01-12 18:55:47,951 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A000 - Serializing function and data
+2022-01-12 18:55:47,953 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:55:47,953 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:55:47,953 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A000 - Uploading function and modules to the storage backend
+2022-01-12 18:55:47,955 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A000 - Uploading data to the storage backend
+2022-01-12 18:55:47,958 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A000 - Starting function invocation: inverted_map() - Total: 1 activations
+2022-01-12 18:55:47,958 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A000 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:55:47,958 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A000 - Putting job into localhost queue
+2022-01-12 18:55:47,959 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:55:47,961 [DEBUG] lithops.localhost.localhost -- Starting Default Environment for /Users/omergralnik/opt/anaconda3/envs/shula/bin/python
+2022-01-12 18:55:47,962 [DEBUG] lithops.localhost.localhost -- Setting up Default environment
+2022-01-12 18:55:48,101 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A000 - Job invoked (0.142s) - Activation ID: 3ce652-0-A000
+2022-01-12 18:55:48,101 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A000 - Running 1 activations in the localhost worker
+2022-01-12 18:55:48,101 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A000 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A000.log
+2022-01-12 18:55:48,109 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Starting Storage job monitor
+2022-01-12 18:55:48,111 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:55:48,113 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:55:48,725 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A000 - Execution finished
+2022-01-12 18:55:48,726 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:55:49,124 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A000 - Got status from call 00000 - Activation ID: f609861e9443 - Time: 0.34 seconds
+2022-01-12 18:55:49,126 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A001 - Selected Runtime: python 
+2022-01-12 18:55:49,127 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:55:49,128 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A001 - Serializing function and data
+2022-01-12 18:55:49,135 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:55:49,136 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:55:49,137 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A001 - Function and modules found in local cache
+2022-01-12 18:55:49,137 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A001 - Uploading data to the storage backend
+2022-01-12 18:55:49,139 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A001 - Starting function invocation: inverted_map() - Total: 1 activations
+2022-01-12 18:55:49,140 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A001 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:55:49,141 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A001 - Putting job into localhost queue
+2022-01-12 18:55:49,143 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:55:49,146 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A001 - Job invoked (0.004s) - Activation ID: 3ce652-0-A001
+2022-01-12 18:55:49,147 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A001 - Running 1 activations in the localhost worker
+2022-01-12 18:55:49,147 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A001 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A001.log
+2022-01-12 18:55:49,149 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:55:49,161 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:55:49,633 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A001 - Execution finished
+2022-01-12 18:55:49,633 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:55:50,124 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Pending: 0 - Running: 0 - Done: 2
+2022-01-12 18:55:50,124 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Storage job monitor finished
+2022-01-12 18:55:50,164 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A001 - Got status from call 00000 - Activation ID: 09cfd7838d15 - Time: 0.24 seconds
+2022-01-12 18:55:50,164 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A002 - Selected Runtime: python 
+2022-01-12 18:55:50,165 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:55:50,166 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A002 - Serializing function and data
+2022-01-12 18:55:50,169 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:55:50,170 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:55:50,170 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A002 - Function and modules found in local cache
+2022-01-12 18:55:50,170 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A002 - Uploading data to the storage backend
+2022-01-12 18:55:50,172 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A002 - Starting function invocation: inverted_map() - Total: 1 activations
+2022-01-12 18:55:50,172 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A002 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:55:50,173 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A002 - Putting job into localhost queue
+2022-01-12 18:55:50,174 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:55:50,176 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A002 - Job invoked (0.003s) - Activation ID: 3ce652-0-A002
+2022-01-12 18:55:50,176 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A002 - Running 1 activations in the localhost worker
+2022-01-12 18:55:50,176 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A002 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A002.log
+2022-01-12 18:55:50,185 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Starting Storage job monitor
+2022-01-12 18:55:50,185 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:55:50,186 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:55:50,630 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A002 - Execution finished
+2022-01-12 18:55:50,631 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:55:51,188 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A002 - Got status from call 00000 - Activation ID: de318f840ed8 - Time: 0.23 seconds
+2022-01-12 18:55:51,189 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A003 - Selected Runtime: python 
+2022-01-12 18:55:51,189 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:55:51,190 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A003 - Serializing function and data
+2022-01-12 18:55:51,192 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:55:51,194 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:55:51,195 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A003 - Function and modules found in local cache
+2022-01-12 18:55:51,195 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A003 - Uploading data to the storage backend
+2022-01-12 18:55:51,196 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A003 - Starting function invocation: inverted_map() - Total: 1 activations
+2022-01-12 18:55:51,197 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A003 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:55:51,197 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A003 - Putting job into localhost queue
+2022-01-12 18:55:51,198 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:55:51,200 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A003 - Job invoked (0.003s) - Activation ID: 3ce652-0-A003
+2022-01-12 18:55:51,200 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A003 - Running 1 activations in the localhost worker
+2022-01-12 18:55:51,200 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A003 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A003.log
+2022-01-12 18:55:51,212 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:55:51,217 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:55:51,736 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A003 - Execution finished
+2022-01-12 18:55:51,737 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:55:52,193 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Pending: 0 - Running: 0 - Done: 2
+2022-01-12 18:55:52,194 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Storage job monitor finished
+2022-01-12 18:55:52,225 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A003 - Got status from call 00000 - Activation ID: a549021e2cc3 - Time: 0.26 seconds
+2022-01-12 18:55:52,226 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A004 - Selected Runtime: python 
+2022-01-12 18:55:52,226 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:55:52,227 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A004 - Serializing function and data
+2022-01-12 18:55:52,230 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:55:52,230 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:55:52,231 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A004 - Function and modules found in local cache
+2022-01-12 18:55:52,231 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A004 - Uploading data to the storage backend
+2022-01-12 18:55:52,233 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A004 - Starting function invocation: inverted_map() - Total: 1 activations
+2022-01-12 18:55:52,234 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A004 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:55:52,235 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A004 - Putting job into localhost queue
+2022-01-12 18:55:52,236 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:55:52,237 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A004 - Job invoked (0.002s) - Activation ID: 3ce652-0-A004
+2022-01-12 18:55:52,238 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A004 - Running 1 activations in the localhost worker
+2022-01-12 18:55:52,238 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A004 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A004.log
+2022-01-12 18:55:52,244 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Starting Storage job monitor
+2022-01-12 18:55:52,246 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:55:52,248 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:55:52,789 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A004 - Execution finished
+2022-01-12 18:55:52,790 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:55:53,250 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A004 - Got status from call 00000 - Activation ID: c03c8cd0432c - Time: 0.28 seconds
+2022-01-12 18:55:53,251 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A005 - Selected Runtime: python 
+2022-01-12 18:55:53,251 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:55:53,252 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A005 - Serializing function and data
+2022-01-12 18:55:53,255 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:55:53,256 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:55:53,256 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A005 - Function and modules found in local cache
+2022-01-12 18:55:53,256 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A005 - Uploading data to the storage backend
+2022-01-12 18:55:53,258 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A005 - Starting function invocation: inverted_map() - Total: 1 activations
+2022-01-12 18:55:53,258 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A005 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:55:53,259 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A005 - Putting job into localhost queue
+2022-01-12 18:55:53,260 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:55:53,262 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A005 - Job invoked (0.003s) - Activation ID: 3ce652-0-A005
+2022-01-12 18:55:53,263 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A005 - Running 1 activations in the localhost worker
+2022-01-12 18:55:53,263 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A005 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A005.log
+2022-01-12 18:55:53,264 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:55:53,269 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:55:53,736 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A005 - Execution finished
+2022-01-12 18:55:53,736 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:55:54,255 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Pending: 0 - Running: 0 - Done: 2
+2022-01-12 18:55:54,256 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Storage job monitor finished
+2022-01-12 18:55:54,274 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A005 - Got status from call 00000 - Activation ID: 4df6d0e0e828 - Time: 0.24 seconds
+2022-01-12 18:55:54,275 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A006 - Selected Runtime: python 
+2022-01-12 18:55:54,275 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:55:54,276 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A006 - Serializing function and data
+2022-01-12 18:55:54,280 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:55:54,281 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:55:54,281 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A006 - Function and modules found in local cache
+2022-01-12 18:55:54,282 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A006 - Uploading data to the storage backend
+2022-01-12 18:55:54,284 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A006 - Starting function invocation: inverted_map() - Total: 1 activations
+2022-01-12 18:55:54,285 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A006 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:55:54,285 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A006 - Putting job into localhost queue
+2022-01-12 18:55:54,286 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:55:54,288 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A006 - Job invoked (0.003s) - Activation ID: 3ce652-0-A006
+2022-01-12 18:55:54,288 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A006 - Running 1 activations in the localhost worker
+2022-01-12 18:55:54,289 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A006 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A006.log
+2022-01-12 18:55:54,298 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Starting Storage job monitor
+2022-01-12 18:55:54,301 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:55:54,303 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:55:54,759 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A006 - Execution finished
+2022-01-12 18:55:54,759 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:55:55,309 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A006 - Got status from call 00000 - Activation ID: 77f3dc054623 - Time: 0.24 seconds
+2022-01-12 18:55:55,310 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A007 - Selected Runtime: python 
+2022-01-12 18:55:55,310 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:55:55,311 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A007 - Serializing function and data
+2022-01-12 18:55:55,315 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:55:55,315 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:55:55,316 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A007 - Function and modules found in local cache
+2022-01-12 18:55:55,316 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A007 - Uploading data to the storage backend
+2022-01-12 18:55:55,318 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A007 - Starting function invocation: inverted_map() - Total: 1 activations
+2022-01-12 18:55:55,318 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A007 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:55:55,318 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A007 - Putting job into localhost queue
+2022-01-12 18:55:55,319 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:55:55,321 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A007 - Job invoked (0.002s) - Activation ID: 3ce652-0-A007
+2022-01-12 18:55:55,321 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A007 - Running 1 activations in the localhost worker
+2022-01-12 18:55:55,321 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A007 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A007.log
+2022-01-12 18:55:55,322 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:55:55,328 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:55:55,842 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A007 - Execution finished
+2022-01-12 18:55:55,843 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:55:56,311 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Pending: 0 - Running: 0 - Done: 2
+2022-01-12 18:55:56,311 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Storage job monitor finished
+2022-01-12 18:55:56,333 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A007 - Got status from call 00000 - Activation ID: a6a9c8b1093e - Time: 0.29 seconds
+2022-01-12 18:55:56,334 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A008 - Selected Runtime: python 
+2022-01-12 18:55:56,334 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:55:56,335 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A008 - Serializing function and data
+2022-01-12 18:55:56,338 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:55:56,339 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:55:56,339 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A008 - Function and modules found in local cache
+2022-01-12 18:55:56,340 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A008 - Uploading data to the storage backend
+2022-01-12 18:55:56,341 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A008 - Starting function invocation: inverted_map() - Total: 1 activations
+2022-01-12 18:55:56,342 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A008 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:55:56,342 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A008 - Putting job into localhost queue
+2022-01-12 18:55:56,343 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:55:56,344 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A008 - Job invoked (0.002s) - Activation ID: 3ce652-0-A008
+2022-01-12 18:55:56,344 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A008 - Running 1 activations in the localhost worker
+2022-01-12 18:55:56,345 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A008 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A008.log
+2022-01-12 18:55:56,353 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Starting Storage job monitor
+2022-01-12 18:55:56,354 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:55:56,356 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:55:56,861 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A008 - Execution finished
+2022-01-12 18:55:56,861 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:55:57,359 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A008 - Got status from call 00000 - Activation ID: 7934a7089d4f - Time: 0.24 seconds
+2022-01-12 18:55:57,360 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A009 - Selected Runtime: python 
+2022-01-12 18:55:57,360 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:55:57,361 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A009 - Serializing function and data
+2022-01-12 18:55:57,365 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:55:57,366 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:55:57,367 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A009 - Function and modules found in local cache
+2022-01-12 18:55:57,367 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A009 - Uploading data to the storage backend
+2022-01-12 18:55:57,368 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A009 - Starting function invocation: inverted_map() - Total: 1 activations
+2022-01-12 18:55:57,368 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A009 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:55:57,369 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A009 - Putting job into localhost queue
+2022-01-12 18:55:57,370 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:55:57,372 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A009 - Job invoked (0.003s) - Activation ID: 3ce652-0-A009
+2022-01-12 18:55:57,372 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A009 - Running 1 activations in the localhost worker
+2022-01-12 18:55:57,373 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A009 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A009.log
+2022-01-12 18:55:57,374 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:55:57,381 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:55:57,882 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A009 - Execution finished
+2022-01-12 18:55:57,883 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:55:58,363 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Pending: 0 - Running: 0 - Done: 2
+2022-01-12 18:55:58,364 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Storage job monitor finished
+2022-01-12 18:55:58,385 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A009 - Got status from call 00000 - Activation ID: a79ef720e3df - Time: 0.27 seconds
+2022-01-12 18:55:58,385 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A010 - Selected Runtime: python 
+2022-01-12 18:55:58,386 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:55:58,386 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A010 - Serializing function and data
+2022-01-12 18:55:58,390 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:55:58,390 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:55:58,391 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A010 - Function and modules found in local cache
+2022-01-12 18:55:58,391 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A010 - Uploading data to the storage backend
+2022-01-12 18:55:58,393 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A010 - Starting function invocation: inverted_map() - Total: 1 activations
+2022-01-12 18:55:58,393 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A010 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:55:58,394 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A010 - Putting job into localhost queue
+2022-01-12 18:55:58,395 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:55:58,397 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A010 - Job invoked (0.003s) - Activation ID: 3ce652-0-A010
+2022-01-12 18:55:58,397 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A010 - Running 1 activations in the localhost worker
+2022-01-12 18:55:58,398 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A010 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A010.log
+2022-01-12 18:55:58,409 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Starting Storage job monitor
+2022-01-12 18:55:58,410 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:55:58,412 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:55:59,177 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A010 - Execution finished
+2022-01-12 18:55:59,178 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:55:59,418 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A010 - Got status from call 00000 - Activation ID: 579d78464fb7 - Time: 0.35 seconds
+2022-01-12 18:55:59,419 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A011 - Selected Runtime: python 
+2022-01-12 18:55:59,420 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:55:59,421 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A011 - Serializing function and data
+2022-01-12 18:55:59,431 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:55:59,433 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:55:59,434 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A011 - Function and modules found in local cache
+2022-01-12 18:55:59,435 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A011 - Uploading data to the storage backend
+2022-01-12 18:55:59,439 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A011 - Starting function invocation: inverted_map() - Total: 1 activations
+2022-01-12 18:55:59,440 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A011 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:55:59,441 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A011 - Putting job into localhost queue
+2022-01-12 18:55:59,442 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:55:59,445 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A011 - Running 1 activations in the localhost worker
+2022-01-12 18:55:59,444 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A011 - Job invoked (0.004s) - Activation ID: 3ce652-0-A011
+2022-01-12 18:55:59,456 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A011 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A011.log
+2022-01-12 18:55:59,457 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:55:59,458 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:55:59,984 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A011 - Execution finished
+2022-01-12 18:55:59,985 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:00,428 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Pending: 0 - Running: 0 - Done: 2
+2022-01-12 18:56:00,429 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Storage job monitor finished
+2022-01-12 18:56:00,465 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A011 - Got status from call 00000 - Activation ID: f0000c52dc8f - Time: 0.26 seconds
+2022-01-12 18:56:00,466 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A012 - Selected Runtime: python 
+2022-01-12 18:56:00,467 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:00,468 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A012 - Serializing function and data
+2022-01-12 18:56:00,475 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:00,476 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:00,477 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A012 - Function and modules found in local cache
+2022-01-12 18:56:00,477 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A012 - Uploading data to the storage backend
+2022-01-12 18:56:00,480 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A012 - Starting function invocation: inverted_map() - Total: 1 activations
+2022-01-12 18:56:00,481 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A012 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:00,481 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A012 - Putting job into localhost queue
+2022-01-12 18:56:00,482 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:00,483 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A012 - Job invoked (0.002s) - Activation ID: 3ce652-0-A012
+2022-01-12 18:56:00,483 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A012 - Running 1 activations in the localhost worker
+2022-01-12 18:56:00,483 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A012 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A012.log
+2022-01-12 18:56:00,494 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Starting Storage job monitor
+2022-01-12 18:56:00,495 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:00,497 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:01,012 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A012 - Execution finished
+2022-01-12 18:56:01,013 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:01,506 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A012 - Got status from call 00000 - Activation ID: 19dffba07c8e - Time: 0.25 seconds
+2022-01-12 18:56:01,508 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A013 - Selected Runtime: python 
+2022-01-12 18:56:01,512 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:01,514 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A013 - Serializing function and data
+2022-01-12 18:56:01,522 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:01,524 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:01,525 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A013 - Function and modules found in local cache
+2022-01-12 18:56:01,527 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A013 - Uploading data to the storage backend
+2022-01-12 18:56:01,535 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A013 - Starting function invocation: inverted_map() - Total: 1 activations
+2022-01-12 18:56:01,538 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A013 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:01,542 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A013 - Putting job into localhost queue
+2022-01-12 18:56:01,546 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:01,552 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A013 - Job invoked (0.010s) - Activation ID: 3ce652-0-A013
+2022-01-12 18:56:01,552 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A013 - Running 1 activations in the localhost worker
+2022-01-12 18:56:01,553 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A013 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A013.log
+2022-01-12 18:56:01,566 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:01,570 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:02,230 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A013 - Execution finished
+2022-01-12 18:56:02,231 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:02,514 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Pending: 0 - Running: 0 - Done: 2
+2022-01-12 18:56:02,515 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Storage job monitor finished
+2022-01-12 18:56:02,579 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A013 - Got status from call 00000 - Activation ID: 08b51801e4be - Time: 0.28 seconds
+2022-01-12 18:56:02,580 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A014 - Selected Runtime: python 
+2022-01-12 18:56:02,581 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:02,582 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A014 - Serializing function and data
+2022-01-12 18:56:02,591 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:02,592 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:02,593 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A014 - Function and modules found in local cache
+2022-01-12 18:56:02,596 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A014 - Uploading data to the storage backend
+2022-01-12 18:56:02,599 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A014 - Starting function invocation: inverted_map() - Total: 1 activations
+2022-01-12 18:56:02,599 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A014 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:02,600 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A014 - Putting job into localhost queue
+2022-01-12 18:56:02,601 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:02,603 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A014 - Job invoked (0.003s) - Activation ID: 3ce652-0-A014
+2022-01-12 18:56:02,603 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A014 - Running 1 activations in the localhost worker
+2022-01-12 18:56:02,603 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A014 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A014.log
+2022-01-12 18:56:02,614 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Starting Storage job monitor
+2022-01-12 18:56:02,616 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:02,618 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:03,179 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A014 - Execution finished
+2022-01-12 18:56:03,180 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:03,627 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A014 - Got status from call 00000 - Activation ID: 95b882d0a39b - Time: 0.30 seconds
+2022-01-12 18:56:03,629 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A015 - Selected Runtime: python 
+2022-01-12 18:56:03,630 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:03,631 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A015 - Serializing function and data
+2022-01-12 18:56:03,639 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:03,640 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:03,642 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A015 - Function and modules found in local cache
+2022-01-12 18:56:03,643 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A015 - Uploading data to the storage backend
+2022-01-12 18:56:03,648 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A015 - Starting function invocation: inverted_map() - Total: 1 activations
+2022-01-12 18:56:03,649 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A015 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:03,650 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A015 - Putting job into localhost queue
+2022-01-12 18:56:03,651 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:03,653 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A015 - Job invoked (0.003s) - Activation ID: 3ce652-0-A015
+2022-01-12 18:56:03,653 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A015 - Running 1 activations in the localhost worker
+2022-01-12 18:56:03,653 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A015 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A015.log
+2022-01-12 18:56:03,655 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:03,666 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:04,165 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A015 - Execution finished
+2022-01-12 18:56:04,165 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:04,639 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Pending: 0 - Running: 0 - Done: 2
+2022-01-12 18:56:04,641 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Storage job monitor finished
+2022-01-12 18:56:04,671 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A015 - Got status from call 00000 - Activation ID: 97942abf0798 - Time: 0.25 seconds
+2022-01-12 18:56:04,673 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A016 - Selected Runtime: python 
+2022-01-12 18:56:04,673 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:04,674 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A016 - Serializing function and data
+2022-01-12 18:56:04,681 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:04,682 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:04,683 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A016 - Function and modules found in local cache
+2022-01-12 18:56:04,683 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A016 - Uploading data to the storage backend
+2022-01-12 18:56:04,685 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A016 - Starting function invocation: inverted_map() - Total: 1 activations
+2022-01-12 18:56:04,686 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A016 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:04,687 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A016 - Putting job into localhost queue
+2022-01-12 18:56:04,688 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:04,690 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A016 - Job invoked (0.002s) - Activation ID: 3ce652-0-A016
+2022-01-12 18:56:04,690 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A016 - Running 1 activations in the localhost worker
+2022-01-12 18:56:04,690 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A016 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A016.log
+2022-01-12 18:56:04,701 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Starting Storage job monitor
+2022-01-12 18:56:04,703 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:04,705 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:05,168 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A016 - Execution finished
+2022-01-12 18:56:05,169 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:05,710 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A016 - Got status from call 00000 - Activation ID: 89dd5cb434a5 - Time: 0.23 seconds
+2022-01-12 18:56:05,712 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A017 - Selected Runtime: python 
+2022-01-12 18:56:05,714 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:05,717 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A017 - Serializing function and data
+2022-01-12 18:56:05,726 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:05,727 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:05,727 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A017 - Function and modules found in local cache
+2022-01-12 18:56:05,729 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A017 - Uploading data to the storage backend
+2022-01-12 18:56:05,732 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A017 - Starting function invocation: inverted_map() - Total: 1 activations
+2022-01-12 18:56:05,733 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A017 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:05,734 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A017 - Putting job into localhost queue
+2022-01-12 18:56:05,736 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:05,738 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A017 - Job invoked (0.003s) - Activation ID: 3ce652-0-A017
+2022-01-12 18:56:05,738 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A017 - Running 1 activations in the localhost worker
+2022-01-12 18:56:05,739 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A017 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A017.log
+2022-01-12 18:56:05,741 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:05,749 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:06,230 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A017 - Execution finished
+2022-01-12 18:56:06,231 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:06,722 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Pending: 0 - Running: 0 - Done: 2
+2022-01-12 18:56:06,723 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Storage job monitor finished
+2022-01-12 18:56:06,759 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A017 - Got status from call 00000 - Activation ID: 3ad806baffaa - Time: 0.24 seconds
+2022-01-12 18:56:06,760 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A018 - Selected Runtime: python 
+2022-01-12 18:56:06,761 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:06,762 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A018 - Serializing function and data
+2022-01-12 18:56:06,768 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:06,769 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:06,769 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A018 - Function and modules found in local cache
+2022-01-12 18:56:06,770 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A018 - Uploading data to the storage backend
+2022-01-12 18:56:06,771 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A018 - Starting function invocation: inverted_map() - Total: 1 activations
+2022-01-12 18:56:06,772 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A018 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:06,773 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A018 - Putting job into localhost queue
+2022-01-12 18:56:06,774 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:06,775 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A018 - Job invoked (0.003s) - Activation ID: 3ce652-0-A018
+2022-01-12 18:56:06,776 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A018 - Running 1 activations in the localhost worker
+2022-01-12 18:56:06,776 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A018 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A018.log
+2022-01-12 18:56:06,784 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Starting Storage job monitor
+2022-01-12 18:56:06,785 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:06,787 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:07,268 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A018 - Execution finished
+2022-01-12 18:56:07,269 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:07,796 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A018 - Got status from call 00000 - Activation ID: d4bfc196a72d - Time: 0.24 seconds
+2022-01-12 18:56:07,799 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A019 - Selected Runtime: python 
+2022-01-12 18:56:07,800 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:07,803 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A019 - Serializing function and data
+2022-01-12 18:56:07,813 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:07,814 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:07,815 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A019 - Function and modules found in local cache
+2022-01-12 18:56:07,816 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A019 - Uploading data to the storage backend
+2022-01-12 18:56:07,819 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A019 - Starting function invocation: inverted_map() - Total: 1 activations
+2022-01-12 18:56:07,820 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A019 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:07,821 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A019 - Putting job into localhost queue
+2022-01-12 18:56:07,823 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:07,825 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A019 - Job invoked (0.004s) - Activation ID: 3ce652-0-A019
+2022-01-12 18:56:07,825 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A019 - Running 1 activations in the localhost worker
+2022-01-12 18:56:07,826 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A019 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A019.log
+2022-01-12 18:56:07,840 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:07,842 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:08,310 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A019 - Execution finished
+2022-01-12 18:56:08,310 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:08,816 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Pending: 0 - Running: 0 - Done: 2
+2022-01-12 18:56:08,818 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Storage job monitor finished
+2022-01-12 18:56:08,845 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A019 - Got status from call 00000 - Activation ID: 9ae7bda9c995 - Time: 0.24 seconds
+2022-01-12 18:56:08,904 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A020 - Selected Runtime: python 
+2022-01-12 18:56:08,905 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:08,905 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A020 - Serializing function and data
+2022-01-12 18:56:08,907 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:08,908 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:08,908 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A020 - Uploading function and modules to the storage backend
+2022-01-12 18:56:08,909 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A020 - Uploading data to the storage backend
+2022-01-12 18:56:08,910 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A020 - Starting function invocation: inverted_reduce() - Total: 1 activations
+2022-01-12 18:56:08,910 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A020 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:08,911 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A020 - Putting job into localhost queue
+2022-01-12 18:56:08,911 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:08,913 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A020 - Job invoked (0.003s) - Activation ID: 3ce652-0-A020
+2022-01-12 18:56:08,913 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A020 - Running 1 activations in the localhost worker
+2022-01-12 18:56:08,914 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A020 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A020.log
+2022-01-12 18:56:08,922 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Starting Storage job monitor
+2022-01-12 18:56:08,922 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:08,923 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:09,401 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A020 - Execution finished
+2022-01-12 18:56:09,403 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:09,930 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A020 - Got status from call 00000 - Activation ID: 089d9cefb38e - Time: 0.26 seconds
+2022-01-12 18:56:09,931 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A021 - Selected Runtime: python 
+2022-01-12 18:56:09,931 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:09,932 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A021 - Serializing function and data
+2022-01-12 18:56:09,934 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:09,936 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:09,937 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A021 - Function and modules found in local cache
+2022-01-12 18:56:09,937 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A021 - Uploading data to the storage backend
+2022-01-12 18:56:09,939 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A021 - Starting function invocation: inverted_reduce() - Total: 1 activations
+2022-01-12 18:56:09,940 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A021 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:09,941 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A021 - Putting job into localhost queue
+2022-01-12 18:56:09,942 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:09,945 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A021 - Job invoked (0.004s) - Activation ID: 3ce652-0-A021
+2022-01-12 18:56:09,946 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A021 - Running 1 activations in the localhost worker
+2022-01-12 18:56:09,946 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A021 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A021.log
+2022-01-12 18:56:09,959 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:09,961 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:10,412 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A021 - Execution finished
+2022-01-12 18:56:10,413 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:10,952 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Pending: 0 - Running: 0 - Done: 2
+2022-01-12 18:56:10,954 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Storage job monitor finished
+2022-01-12 18:56:10,969 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A021 - Got status from call 00000 - Activation ID: 2ca912fce724 - Time: 0.22 seconds
+2022-01-12 18:56:10,971 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A022 - Selected Runtime: python 
+2022-01-12 18:56:10,972 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:10,973 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A022 - Serializing function and data
+2022-01-12 18:56:10,980 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:10,981 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:10,982 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A022 - Function and modules found in local cache
+2022-01-12 18:56:10,983 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A022 - Uploading data to the storage backend
+2022-01-12 18:56:10,985 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A022 - Starting function invocation: inverted_reduce() - Total: 1 activations
+2022-01-12 18:56:10,986 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A022 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:10,987 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A022 - Putting job into localhost queue
+2022-01-12 18:56:10,988 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:10,989 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A022 - Job invoked (0.003s) - Activation ID: 3ce652-0-A022
+2022-01-12 18:56:10,990 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A022 - Running 1 activations in the localhost worker
+2022-01-12 18:56:10,990 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A022 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A022.log
+2022-01-12 18:56:11,002 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Starting Storage job monitor
+2022-01-12 18:56:11,003 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:11,004 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:11,440 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A022 - Execution finished
+2022-01-12 18:56:11,441 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:12,013 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A022 - Got status from call 00000 - Activation ID: 1491627c71c8 - Time: 0.22 seconds
+2022-01-12 18:56:12,016 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A023 - Selected Runtime: python 
+2022-01-12 18:56:12,018 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:12,021 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A023 - Serializing function and data
+2022-01-12 18:56:12,031 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:12,034 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:12,036 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A023 - Function and modules found in local cache
+2022-01-12 18:56:12,037 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A023 - Uploading data to the storage backend
+2022-01-12 18:56:12,039 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A023 - Starting function invocation: inverted_reduce() - Total: 1 activations
+2022-01-12 18:56:12,040 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A023 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:12,040 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A023 - Putting job into localhost queue
+2022-01-12 18:56:12,041 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:12,043 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A023 - Job invoked (0.003s) - Activation ID: 3ce652-0-A023
+2022-01-12 18:56:12,044 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A023 - Running 1 activations in the localhost worker
+2022-01-12 18:56:12,044 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A023 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A023.log
+2022-01-12 18:56:12,056 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:12,059 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:12,510 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A023 - Execution finished
+2022-01-12 18:56:12,510 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:13,024 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Pending: 0 - Running: 0 - Done: 2
+2022-01-12 18:56:13,026 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Storage job monitor finished
+2022-01-12 18:56:13,067 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A023 - Got status from call 00000 - Activation ID: 603fcb6a257c - Time: 0.23 seconds
+2022-01-12 18:56:13,069 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A024 - Selected Runtime: python 
+2022-01-12 18:56:13,070 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:13,071 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A024 - Serializing function and data
+2022-01-12 18:56:13,079 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:13,080 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:13,081 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A024 - Function and modules found in local cache
+2022-01-12 18:56:13,082 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A024 - Uploading data to the storage backend
+2022-01-12 18:56:13,085 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A024 - Starting function invocation: inverted_reduce() - Total: 1 activations
+2022-01-12 18:56:13,085 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A024 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:13,086 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A024 - Putting job into localhost queue
+2022-01-12 18:56:13,087 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:13,089 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A024 - Job invoked (0.003s) - Activation ID: 3ce652-0-A024
+2022-01-12 18:56:13,090 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A024 - Running 1 activations in the localhost worker
+2022-01-12 18:56:13,090 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A024 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A024.log
+2022-01-12 18:56:13,102 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Starting Storage job monitor
+2022-01-12 18:56:13,103 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:13,105 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:13,565 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A024 - Execution finished
+2022-01-12 18:56:13,566 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:14,114 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A024 - Got status from call 00000 - Activation ID: a59a29ac5d52 - Time: 0.24 seconds
+2022-01-12 18:56:14,116 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A025 - Selected Runtime: python 
+2022-01-12 18:56:14,118 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:14,120 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A025 - Serializing function and data
+2022-01-12 18:56:14,132 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:14,134 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:14,134 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A025 - Function and modules found in local cache
+2022-01-12 18:56:14,135 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A025 - Uploading data to the storage backend
+2022-01-12 18:56:14,139 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A025 - Starting function invocation: inverted_reduce() - Total: 1 activations
+2022-01-12 18:56:14,140 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A025 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:14,141 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A025 - Putting job into localhost queue
+2022-01-12 18:56:14,142 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:14,145 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A025 - Job invoked (0.004s) - Activation ID: 3ce652-0-A025
+2022-01-12 18:56:14,145 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A025 - Running 1 activations in the localhost worker
+2022-01-12 18:56:14,145 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A025 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A025.log
+2022-01-12 18:56:14,161 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:14,162 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:14,614 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A025 - Execution finished
+2022-01-12 18:56:14,614 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:15,138 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Pending: 0 - Running: 0 - Done: 2
+2022-01-12 18:56:15,139 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Storage job monitor finished
+2022-01-12 18:56:15,169 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A025 - Got status from call 00000 - Activation ID: b9f1b8111f12 - Time: 0.23 seconds
+2022-01-12 18:56:15,170 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A026 - Selected Runtime: python 
+2022-01-12 18:56:15,170 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:15,172 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A026 - Serializing function and data
+2022-01-12 18:56:15,178 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:15,179 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:15,179 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A026 - Function and modules found in local cache
+2022-01-12 18:56:15,180 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A026 - Uploading data to the storage backend
+2022-01-12 18:56:15,182 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A026 - Starting function invocation: inverted_reduce() - Total: 1 activations
+2022-01-12 18:56:15,183 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A026 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:15,183 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A026 - Putting job into localhost queue
+2022-01-12 18:56:15,184 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:15,186 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A026 - Job invoked (0.003s) - Activation ID: 3ce652-0-A026
+2022-01-12 18:56:15,187 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A026 - Running 1 activations in the localhost worker
+2022-01-12 18:56:15,187 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A026 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A026.log
+2022-01-12 18:56:15,197 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Starting Storage job monitor
+2022-01-12 18:56:15,199 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:15,201 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:15,631 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A026 - Execution finished
+2022-01-12 18:56:15,631 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:16,210 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A026 - Got status from call 00000 - Activation ID: 743ca303c9ad - Time: 0.22 seconds
+2022-01-12 18:56:16,212 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A027 - Selected Runtime: python 
+2022-01-12 18:56:16,213 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:16,214 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A027 - Serializing function and data
+2022-01-12 18:56:16,224 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:16,227 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:16,231 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A027 - Function and modules found in local cache
+2022-01-12 18:56:16,232 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A027 - Uploading data to the storage backend
+2022-01-12 18:56:16,235 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A027 - Starting function invocation: inverted_reduce() - Total: 1 activations
+2022-01-12 18:56:16,236 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A027 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:16,236 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A027 - Putting job into localhost queue
+2022-01-12 18:56:16,238 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:16,240 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A027 - Job invoked (0.003s) - Activation ID: 3ce652-0-A027
+2022-01-12 18:56:16,240 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A027 - Running 1 activations in the localhost worker
+2022-01-12 18:56:16,241 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A027 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A027.log
+2022-01-12 18:56:16,255 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:16,256 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:16,710 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A027 - Execution finished
+2022-01-12 18:56:16,710 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:17,225 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Pending: 0 - Running: 0 - Done: 2
+2022-01-12 18:56:17,226 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Storage job monitor finished
+2022-01-12 18:56:17,260 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A027 - Got status from call 00000 - Activation ID: cba3143d2d3e - Time: 0.22 seconds
+2022-01-12 18:56:17,261 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A028 - Selected Runtime: python 
+2022-01-12 18:56:17,262 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:17,263 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A028 - Serializing function and data
+2022-01-12 18:56:17,268 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:17,270 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:17,271 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A028 - Function and modules found in local cache
+2022-01-12 18:56:17,271 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A028 - Uploading data to the storage backend
+2022-01-12 18:56:17,273 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A028 - Starting function invocation: inverted_reduce() - Total: 1 activations
+2022-01-12 18:56:17,274 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A028 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:17,275 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A028 - Putting job into localhost queue
+2022-01-12 18:56:17,276 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:17,278 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A028 - Job invoked (0.004s) - Activation ID: 3ce652-0-A028
+2022-01-12 18:56:17,279 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A028 - Running 1 activations in the localhost worker
+2022-01-12 18:56:17,279 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A028 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A028.log
+2022-01-12 18:56:17,291 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Starting Storage job monitor
+2022-01-12 18:56:17,292 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:17,294 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:17,736 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A028 - Execution finished
+2022-01-12 18:56:17,737 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:18,301 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A028 - Got status from call 00000 - Activation ID: c89d13da52e1 - Time: 0.22 seconds
+2022-01-12 18:56:18,301 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A029 - Selected Runtime: python 
+2022-01-12 18:56:18,302 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:18,303 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A029 - Serializing function and data
+2022-01-12 18:56:18,306 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:18,307 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:18,308 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A029 - Function and modules found in local cache
+2022-01-12 18:56:18,308 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A029 - Uploading data to the storage backend
+2022-01-12 18:56:18,309 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A029 - Starting function invocation: inverted_reduce() - Total: 1 activations
+2022-01-12 18:56:18,310 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A029 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:18,311 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A029 - Putting job into localhost queue
+2022-01-12 18:56:18,311 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:18,313 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A029 - Job invoked (0.003s) - Activation ID: 3ce652-0-A029
+2022-01-12 18:56:18,314 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A029 - Running 1 activations in the localhost worker
+2022-01-12 18:56:18,314 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A029 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A029.log
+2022-01-12 18:56:18,322 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:18,324 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:18,797 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A029 - Execution finished
+2022-01-12 18:56:18,798 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:19,319 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Pending: 0 - Running: 0 - Done: 2
+2022-01-12 18:56:19,320 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Storage job monitor finished
+2022-01-12 18:56:19,328 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A029 - Got status from call 00000 - Activation ID: 5636f1a3b40f - Time: 0.25 seconds
+2022-01-12 18:56:19,329 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A030 - Selected Runtime: python 
+2022-01-12 18:56:19,329 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:19,330 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A030 - Serializing function and data
+2022-01-12 18:56:19,334 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:19,335 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:19,337 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A030 - Function and modules found in local cache
+2022-01-12 18:56:19,337 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A030 - Uploading data to the storage backend
+2022-01-12 18:56:19,339 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A030 - Starting function invocation: inverted_reduce() - Total: 1 activations
+2022-01-12 18:56:19,340 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A030 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:19,340 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A030 - Putting job into localhost queue
+2022-01-12 18:56:19,342 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:19,344 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A030 - Job invoked (0.003s) - Activation ID: 3ce652-0-A030
+2022-01-12 18:56:19,344 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A030 - Running 1 activations in the localhost worker
+2022-01-12 18:56:19,344 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A030 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A030.log
+2022-01-12 18:56:19,354 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Starting Storage job monitor
+2022-01-12 18:56:19,355 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:19,357 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:19,839 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A030 - Execution finished
+2022-01-12 18:56:19,840 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:20,367 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A030 - Got status from call 00000 - Activation ID: edee5256728b - Time: 0.24 seconds
+2022-01-12 18:56:20,370 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A031 - Selected Runtime: python 
+2022-01-12 18:56:20,371 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:20,374 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A031 - Serializing function and data
+2022-01-12 18:56:20,386 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:20,387 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:20,388 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A031 - Function and modules found in local cache
+2022-01-12 18:56:20,389 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A031 - Uploading data to the storage backend
+2022-01-12 18:56:20,391 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A031 - Starting function invocation: inverted_reduce() - Total: 1 activations
+2022-01-12 18:56:20,392 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A031 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:20,393 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A031 - Putting job into localhost queue
+2022-01-12 18:56:20,395 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:20,396 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A031 - Job invoked (0.003s) - Activation ID: 3ce652-0-A031
+2022-01-12 18:56:20,397 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A031 - Running 1 activations in the localhost worker
+2022-01-12 18:56:20,397 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A031 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A031.log
+2022-01-12 18:56:20,411 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:20,413 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:20,850 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A031 - Execution finished
+2022-01-12 18:56:20,851 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:21,394 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Pending: 0 - Running: 0 - Done: 2
+2022-01-12 18:56:21,395 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Storage job monitor finished
+2022-01-12 18:56:21,418 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A031 - Got status from call 00000 - Activation ID: fb28692f6420 - Time: 0.22 seconds
+2022-01-12 18:56:21,419 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A032 - Selected Runtime: python 
+2022-01-12 18:56:21,419 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:21,420 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A032 - Serializing function and data
+2022-01-12 18:56:21,425 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:21,426 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:21,427 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A032 - Function and modules found in local cache
+2022-01-12 18:56:21,427 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A032 - Uploading data to the storage backend
+2022-01-12 18:56:21,429 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A032 - Starting function invocation: inverted_reduce() - Total: 1 activations
+2022-01-12 18:56:21,430 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A032 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:21,430 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A032 - Putting job into localhost queue
+2022-01-12 18:56:21,431 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:21,433 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A032 - Job invoked (0.003s) - Activation ID: 3ce652-0-A032
+2022-01-12 18:56:21,433 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A032 - Running 1 activations in the localhost worker
+2022-01-12 18:56:21,433 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A032 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A032.log
+2022-01-12 18:56:21,444 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Starting Storage job monitor
+2022-01-12 18:56:21,445 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:21,446 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:21,880 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A032 - Execution finished
+2022-01-12 18:56:21,881 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:22,455 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A032 - Got status from call 00000 - Activation ID: 3f20a1b36d94 - Time: 0.22 seconds
+2022-01-12 18:56:22,458 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A033 - Selected Runtime: python 
+2022-01-12 18:56:22,459 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:22,462 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A033 - Serializing function and data
+2022-01-12 18:56:22,472 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:22,473 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:22,474 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A033 - Function and modules found in local cache
+2022-01-12 18:56:22,475 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A033 - Uploading data to the storage backend
+2022-01-12 18:56:22,478 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A033 - Starting function invocation: inverted_reduce() - Total: 1 activations
+2022-01-12 18:56:22,478 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A033 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:22,480 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A033 - Putting job into localhost queue
+2022-01-12 18:56:22,482 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:22,484 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A033 - Job invoked (0.005s) - Activation ID: 3ce652-0-A033
+2022-01-12 18:56:22,485 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A033 - Running 1 activations in the localhost worker
+2022-01-12 18:56:22,485 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A033 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A033.log
+2022-01-12 18:56:22,499 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:22,502 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:22,943 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A033 - Execution finished
+2022-01-12 18:56:22,944 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:23,479 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Pending: 0 - Running: 0 - Done: 2
+2022-01-12 18:56:23,480 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Storage job monitor finished
+2022-01-12 18:56:23,510 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A033 - Got status from call 00000 - Activation ID: f1f81694cbc6 - Time: 0.22 seconds
+2022-01-12 18:56:23,511 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A034 - Selected Runtime: python 
+2022-01-12 18:56:23,512 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:23,513 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A034 - Serializing function and data
+2022-01-12 18:56:23,518 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:23,519 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:23,519 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A034 - Function and modules found in local cache
+2022-01-12 18:56:23,520 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A034 - Uploading data to the storage backend
+2022-01-12 18:56:23,522 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A034 - Starting function invocation: inverted_reduce() - Total: 1 activations
+2022-01-12 18:56:23,523 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A034 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:23,524 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A034 - Putting job into localhost queue
+2022-01-12 18:56:23,525 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:23,528 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A034 - Job invoked (0.004s) - Activation ID: 3ce652-0-A034
+2022-01-12 18:56:23,528 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A034 - Running 1 activations in the localhost worker
+2022-01-12 18:56:23,528 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A034 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A034.log
+2022-01-12 18:56:23,538 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Starting Storage job monitor
+2022-01-12 18:56:23,539 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:23,541 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:23,968 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A034 - Execution finished
+2022-01-12 18:56:23,968 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:24,550 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A034 - Got status from call 00000 - Activation ID: 72cef904153a - Time: 0.22 seconds
+2022-01-12 18:56:24,553 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A035 - Selected Runtime: python 
+2022-01-12 18:56:24,554 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:24,557 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A035 - Serializing function and data
+2022-01-12 18:56:24,566 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:24,567 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:24,568 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A035 - Function and modules found in local cache
+2022-01-12 18:56:24,569 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A035 - Uploading data to the storage backend
+2022-01-12 18:56:24,572 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A035 - Starting function invocation: inverted_reduce() - Total: 1 activations
+2022-01-12 18:56:24,574 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A035 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:24,575 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A035 - Putting job into localhost queue
+2022-01-12 18:56:24,576 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:24,579 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A035 - Job invoked (0.004s) - Activation ID: 3ce652-0-A035
+2022-01-12 18:56:24,579 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A035 - Running 1 activations in the localhost worker
+2022-01-12 18:56:24,579 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A035 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A035.log
+2022-01-12 18:56:24,593 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:24,594 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:25,048 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A035 - Execution finished
+2022-01-12 18:56:25,049 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:25,577 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Pending: 0 - Running: 0 - Done: 2
+2022-01-12 18:56:25,578 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Storage job monitor finished
+2022-01-12 18:56:25,597 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A035 - Got status from call 00000 - Activation ID: c712f5fd0d9b - Time: 0.23 seconds
+2022-01-12 18:56:25,598 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A036 - Selected Runtime: python 
+2022-01-12 18:56:25,599 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:25,600 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A036 - Serializing function and data
+2022-01-12 18:56:25,604 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:25,605 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:25,606 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A036 - Function and modules found in local cache
+2022-01-12 18:56:25,606 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A036 - Uploading data to the storage backend
+2022-01-12 18:56:25,608 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A036 - Starting function invocation: inverted_reduce() - Total: 1 activations
+2022-01-12 18:56:25,609 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A036 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:25,609 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A036 - Putting job into localhost queue
+2022-01-12 18:56:25,610 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:25,612 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A036 - Job invoked (0.003s) - Activation ID: 3ce652-0-A036
+2022-01-12 18:56:25,612 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A036 - Running 1 activations in the localhost worker
+2022-01-12 18:56:25,613 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A036 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A036.log
+2022-01-12 18:56:25,614 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Starting Storage job monitor
+2022-01-12 18:56:25,622 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:25,625 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:26,072 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A036 - Execution finished
+2022-01-12 18:56:26,072 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:26,634 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A036 - Got status from call 00000 - Activation ID: 7e779b3f8d38 - Time: 0.23 seconds
+2022-01-12 18:56:26,637 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A037 - Selected Runtime: python 
+2022-01-12 18:56:26,638 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:26,641 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A037 - Serializing function and data
+2022-01-12 18:56:26,651 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:26,652 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:26,653 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A037 - Function and modules found in local cache
+2022-01-12 18:56:26,654 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A037 - Uploading data to the storage backend
+2022-01-12 18:56:26,657 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A037 - Starting function invocation: inverted_reduce() - Total: 1 activations
+2022-01-12 18:56:26,658 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A037 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:26,659 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A037 - Putting job into localhost queue
+2022-01-12 18:56:26,661 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:26,663 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A037 - Job invoked (0.004s) - Activation ID: 3ce652-0-A037
+2022-01-12 18:56:26,664 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A037 - Running 1 activations in the localhost worker
+2022-01-12 18:56:26,664 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A037 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A037.log
+2022-01-12 18:56:26,678 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:26,679 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:27,140 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A037 - Execution finished
+2022-01-12 18:56:27,141 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:27,660 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Pending: 0 - Running: 0 - Done: 2
+2022-01-12 18:56:27,661 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Storage job monitor finished
+2022-01-12 18:56:27,685 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A037 - Got status from call 00000 - Activation ID: c1ffba1414d4 - Time: 0.23 seconds
+2022-01-12 18:56:27,686 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A038 - Selected Runtime: python 
+2022-01-12 18:56:27,687 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:27,687 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A038 - Serializing function and data
+2022-01-12 18:56:27,692 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:27,693 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:27,693 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A038 - Function and modules found in local cache
+2022-01-12 18:56:27,694 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A038 - Uploading data to the storage backend
+2022-01-12 18:56:27,696 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A038 - Starting function invocation: inverted_reduce() - Total: 1 activations
+2022-01-12 18:56:27,696 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A038 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:27,697 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A038 - Putting job into localhost queue
+2022-01-12 18:56:27,698 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:27,699 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A038 - Job invoked (0.003s) - Activation ID: 3ce652-0-A038
+2022-01-12 18:56:27,700 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A038 - Running 1 activations in the localhost worker
+2022-01-12 18:56:27,700 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A038 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A038.log
+2022-01-12 18:56:27,702 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Starting Storage job monitor
+2022-01-12 18:56:27,711 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:27,715 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:28,196 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A038 - Execution finished
+2022-01-12 18:56:28,196 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:28,725 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A038 - Got status from call 00000 - Activation ID: ebd2270206c2 - Time: 0.23 seconds
+2022-01-12 18:56:28,728 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A039 - Selected Runtime: python 
+2022-01-12 18:56:28,729 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:28,732 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A039 - Serializing function and data
+2022-01-12 18:56:28,742 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:28,744 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:28,746 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A039 - Function and modules found in local cache
+2022-01-12 18:56:28,747 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A039 - Uploading data to the storage backend
+2022-01-12 18:56:28,750 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A039 - Starting function invocation: inverted_reduce() - Total: 1 activations
+2022-01-12 18:56:28,751 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A039 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:28,751 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A039 - Putting job into localhost queue
+2022-01-12 18:56:28,752 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:28,754 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A039 - Job invoked (0.003s) - Activation ID: 3ce652-0-A039
+2022-01-12 18:56:28,755 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A039 - Running 1 activations in the localhost worker
+2022-01-12 18:56:28,755 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A039 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A039.log
+2022-01-12 18:56:28,767 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:28,770 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:29,221 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A039 - Execution finished
+2022-01-12 18:56:29,222 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:29,753 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Pending: 0 - Running: 0 - Done: 2
+2022-01-12 18:56:29,754 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Storage job monitor finished
+2022-01-12 18:56:29,777 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A039 - Got status from call 00000 - Activation ID: 90f8a49aa875 - Time: 0.22 seconds
+2022-01-12 18:56:29,778 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A040 - Selected Runtime: python 
+2022-01-12 18:56:29,779 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:29,779 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A040 - Serializing function and data
+2022-01-12 18:56:29,784 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:29,785 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:29,786 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A040 - Function and modules found in local cache
+2022-01-12 18:56:29,787 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A040 - Uploading data to the storage backend
+2022-01-12 18:56:29,788 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A040 - Starting function invocation: inverted_reduce() - Total: 1 activations
+2022-01-12 18:56:29,789 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A040 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:29,790 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A040 - Putting job into localhost queue
+2022-01-12 18:56:29,790 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:29,792 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A040 - Job invoked (0.003s) - Activation ID: 3ce652-0-A040
+2022-01-12 18:56:29,792 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A040 - Running 1 activations in the localhost worker
+2022-01-12 18:56:29,793 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A040 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A040.log
+2022-01-12 18:56:29,794 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Starting Storage job monitor
+2022-01-12 18:56:29,794 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:29,805 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:30,242 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A040 - Execution finished
+2022-01-12 18:56:30,243 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:30,814 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A040 - Got status from call 00000 - Activation ID: c1ebe4657001 - Time: 0.22 seconds
+2022-01-12 18:56:30,816 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A041 - Selected Runtime: python 
+2022-01-12 18:56:30,818 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-12 18:56:30,820 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A041 - Serializing function and data
+2022-01-12 18:56:30,829 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/omergralnik/opt/anaconda3/envs/shula/lib/python3.9/site-packages/pandas/__init__.py
+2022-01-12 18:56:30,830 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-12 18:56:30,831 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A041 - Function and modules found in local cache
+2022-01-12 18:56:30,832 [DEBUG] lithops.job.job -- ExecutorID 3ce652-0 | JobID A041 - Uploading data to the storage backend
+2022-01-12 18:56:30,836 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A041 - Starting function invocation: inverted_reduce() - Total: 1 activations
+2022-01-12 18:56:30,837 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A041 - Worker processes: 8 - Chunksize: 8
+2022-01-12 18:56:30,838 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A041 - Putting job into localhost queue
+2022-01-12 18:56:30,839 [DEBUG] lithops.localhost.localhost -- Staring localhost job manager
+2022-01-12 18:56:30,842 [DEBUG] lithops.invokers -- ExecutorID 3ce652-0 | JobID A041 - Job invoked (0.004s) - Activation ID: 3ce652-0-A041
+2022-01-12 18:56:30,842 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A041 - Running 1 activations in the localhost worker
+2022-01-12 18:56:30,842 [INFO] lithops.invokers -- ExecutorID 3ce652-0 | JobID A041 - View execution logs at /private/var/folders/0f/tkxs3lld5zl9lflf7d84jrpr0000gn/T/lithops/logs/3ce652-0-A041.log
+2022-01-12 18:56:30,844 [DEBUG] lithops.storage.backends.localhost.localhost -- Creating Localhost storage client
+2022-01-12 18:56:30,856 [INFO] lithops.storage.backends.localhost.localhost -- Localhost storage client created
+2022-01-12 18:56:31,300 [DEBUG] lithops.localhost.localhost -- ExecutorID 3ce652-0 | JobID A041 - Execution finished
+2022-01-12 18:56:31,301 [DEBUG] lithops.localhost.localhost -- Localhost job manager stopped
+2022-01-12 18:56:31,845 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Pending: 0 - Running: 0 - Done: 2
+2022-01-12 18:56:31,846 [DEBUG] lithops.monitor -- ExecutorID 3ce652-0 - Storage job monitor finished
+2022-01-12 18:56:31,862 [DEBUG] lithops.future -- ExecutorID 3ce652-0 | JobID A041 - Got status from call 00000 - Activation ID: 9adcdd95170a - Time: 0.22 seconds
