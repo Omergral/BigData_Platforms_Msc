@@ -10,6 +10,43 @@ from queue import Queue
 from pathlib import Path
 
 
+# sorting csvs function
+def func(elem):
+    return int(str(elem).split('myCSV')[-1].split('.')[0])
+
+
+def find_files_to_merge(csv_dict: dict, threshold: float = 64.0):
+    """
+    Description
+    -----------
+    gets a dictionary of file and its size that contains multiple "small" files and outputs a list containing small
+    lists of files that needs to be merged in order for the file's sized to be large enough (64 by default)
+
+    Args
+    ----
+    csv_dict (dict) = dictionary of the following structure: {file_name: (file_size, pd.read_csv(file))}
+    threshold (float) = desired threshold for a file to be large enough
+
+    Returns
+    -------
+    main list that contains sub-lists of files that need to be merged (i.e if the main list's length is 3 then there
+    are 3 sub-lists such that each sub-list contains files that need to be merged)
+    """
+    large_files_list = []
+    cur_files_list = []
+    cur_chunk = 0
+    for value in csv_dict.values():
+        if (value[0] + cur_chunk) / 1000000 < threshold:
+            cur_chunk += value[0]
+            cur_files_list.append(value[1])
+        else:
+            cur_files_list.append(value[1])
+            large_files_list.append(cur_files_list)
+            cur_files_list = []
+            cur_chunk = 0
+    return large_files_list
+
+
 # creating the decorator
 def ResultsQueue(func):
     def wrapper(*args):
@@ -19,20 +56,19 @@ def ResultsQueue(func):
 
 
 @ResultsQueue
-def inverted_map(document_name: str):
+def inverted_map(document: Path):
     """
     This function reads the CSV document from the local disc
     and return a list that contains entries of the form (key_value, document name)
     """
     # read the csv and create an empty list
-    data = pd.read_csv(f'{folder_path}/{document_name}')
+    document_name = document.name
+    data = pd.read_csv(document)
     inverted_list = []
 
     # convert each row in the csv to a dictionary and add it to the list
-    for i in range(len(data)):
-        row_dict = dict(data.iloc[i, :])  # {firstname: John, secondname: Bon, city: TelAviv}
-        for key, value in row_dict.items():
-            inverted_list.append((f'{key}_{value}', document_name))  # (firstname_John, secondname_Bon, city_TelAviv)
+    for row in tqdm.tqdm(data.iterrows(), total=data.shape[0], desc=f'processing map function {document_name}'):
+        inverted_list.append([(f"{key}_{value}", document_name) for key, value in row[1].items()])
     return inverted_list
 
 
@@ -48,7 +84,7 @@ def inverted_reduce(value, documents):
     documents = documents.split(',')
 
     # return a list without duplicates
-    return [value] + list(dict.fromkeys(documents))
+    return [value] + list(set(documents))
 
 
 class MapReduceEngine():
@@ -67,7 +103,9 @@ class MapReduceEngine():
         for idx, thread in enumerate(map_threads):
             thread.join()
             results = queue.get()
-            df = pd.DataFrame(results, columns=['key', 'value'])
+            df = pd.DataFrame([item for sublist in
+                               tqdm.tqdm(results, desc=f'creating temp files {idx + 1}/{len(map_threads)}')
+                               for item in sublist], columns=['key', 'value'])
             df.to_csv(f'{folder_path}/mapreducetemp/part-tmp-{idx + 1}.csv', index=False)
 
         # Keep the list of all threads and check whether they are completed
@@ -88,8 +126,8 @@ class MapReduceEngine():
 
         # Once all threads completed, load content of all CSV files into the temp_results table in SQLite
         if completed:
-            for file in os.listdir(f'{folder_path}/mapreducetemp'):
-                df = pd.read_csv(f'{folder_path}/mapreducetemp/{file}')
+            for file in tqdm.tqdm((folder_path/'mapreducetemp').rglob('*.csv'), desc='loading data to sql'):
+                df = pd.read_csv(file)
                 df.to_sql('temp_results', connection, if_exists='append', index=False)
 
             # Write SQL statement that generates a sorted list by key of the form (key, value)
@@ -149,7 +187,7 @@ if __name__ == '__main__':
         secondname.append(random_name)
 
     # let's create the 20 csvs
-    for i in tqdm.tqdm(range(1, 97)):
+    for i in tqdm.tqdm(range(1, 97), desc='creating csvs'):
         firstname_col = random.choices(firstname, k=100000)
         secondname_col = random.choices(secondname, k=100000)
         city_col = random.choices(city, k=100000)
@@ -173,17 +211,28 @@ if __name__ == '__main__':
                         key text,
                         value text)''')
 
-    input_data = [csv for csv in os.listdir(folder_path) if 'csv' in csv]
+    csvs_dict = {}
+    for file in sorted(folder_path.rglob('*csv'), key=func):
+        csvs_dict[file.name] = (file.stat().st_size, pd.read_csv(file))
 
+    files_to_merge = find_files_to_merge(csvs_dict)
 
+    for idx, files_list in enumerate(tqdm.tqdm(files_to_merge, desc='merging csvs')):
+        merged_file = pd.concat(files_list)
+        merged_file.to_csv(folder_path / f'mergedCSV{idx + 1}.csv', index=False)
+
+    for i in folder_path.rglob('myCSV*'):
+        os.remove(i)
+
+    input_data = [csv for csv in folder_path.rglob('*.csv')]
 
     mapreduce = MapReduceEngine()
     status = mapreduce.execute(input_data, inverted_map, inverted_reduce)
     print(status)
 
     # if the folder exists, delete it recursively
-    if os.path.exists(f'{str(folder_path)}/mapreducetemp'):
-        shutil.rmtree(f'{str(folder_path)}/mapreducetemp')
+    if os.path.exists(folder_path / 'mapreducetemp'):
+        shutil.rmtree(folder_path / 'mapreducetemp')
 
     # try to close the connection
     try:
@@ -195,5 +244,5 @@ if __name__ == '__main__':
         print('Connection is already closed!')
 
     # if the database exists - remove it
-    if os.path.exists(f'{str(folder_path)}/hw2.db'):
-        os.remove(f'{str(folder_path)}/hw2.db')
+    if os.path.exists(folder_path / 'hw2.db'):
+        os.remove(folder_path / 'hw2.db')
